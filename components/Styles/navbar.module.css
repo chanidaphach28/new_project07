@@ -1,0 +1,57 @@
+.navbar{
+    top:0px;
+    left: 0px;
+    position: fixed;
+    display: grid;
+    height: 150px;
+    width: 100%;
+    grid-template-rows: 100px 50px;
+    background-color: white;
+    
+}
+
+
+.topbar{
+    border-bottom: 3px solid black;
+    display: grid;
+    grid-template-columns: 200px 250px 530px 150px 235px;
+    box-shadow: 0px 1px 4px gray;
+    text-decoration: none;
+}
+.sign{
+    display: grid;
+    place-items: center;
+    grid-template-rows: 50px 50px;
+
+}
+.logotab{
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.menubar{
+    display: grid;
+    grid-template-columns: 65px 220px 220px 220px 220px 220px 220px;
+    box-shadow: 0px 2px 10px gray;
+}
+.menulist{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
+.menulist:hover{
+    background-color: #000333;
+    color:white;
+}
