@@ -1,24 +1,45 @@
 import Link from "next/link";
 import styles from "./Styles/navbar.module.css";
-
+import Image from "next/image";
 
 export default function Navbar(){
     return(
         <nav className={styles.navbar}>
 
                 <div className={styles.topbar}> 
-                        <span className={styles.logotab}>Logo</span>
+                        <span className={styles.logotab}>
+                            <Link href="/">
+                                <Image  src="/Honghub.png"
+                                width={80} height={80} alt="logo"> 
+                                </Image>
+                            </Link>
+                           
+                        </span>
+                        <span className={styles.logoname}>
+                            <Link href="/">HONGHUB</Link>
+                        </span>
                         <span></span>
-                        <span>Searching</span>
-                        <span className={styles.helptab}>help?</span>
-                        <span className={styles.sign}>
-                            <span>
-                                 <Link href="/">sign in</Link>
-                            </span>
-                            <span>
-                                <Link href="/">sign up</Link>
-                            </span>
 
+                        <span className={styles.mainbar_search1}>
+                            <div className={styles.mainbar_search2}>
+                                <Image className="search_img" src="/search.png" 
+                                width={35} height={35} alt='logo'></Image>
+                                <input type="search" className={styles.search} name =""
+                                placeholder="  i'm searching for..." id=""></input>
+                            </div>
+                        </span>
+
+                        <span className={styles.helptab}>help?</span>
+
+                        <span className={styles.sign}>
+                            <div></div>
+                            <div className={styles.singbtn}>
+                                 <Link href="/pages/signin">Sign in</Link>
+                            </div>
+                            <div>
+                                <Link href="/">Sign up</Link>
+                            </div>
+                            <div></div>
                         </span>
 
 
@@ -27,7 +48,20 @@ export default function Navbar(){
 
 
                 <div className={styles.menubar}>
-                <span className={styles.menulist} >menu</span>
+                        <div class={styles.dropdown}>
+                                <Image
+                                src="/dropdown.png" 
+                                alt="dropdown"
+                                width={45}
+                                height={45}/>
+                 
+                            <div class={styles.dropdown_menu}>
+                                <a href="#">PROMOTION</a>
+                                <a href="#">LOCATION</a>
+                                <a href="#">PRICE RANG</a>
+                                <a href="#">HELP</a>
+                            </div>
+                        </div>
                     <Link href="/" className={styles.menulist}><span >Near me</span></Link>
                     <Link href="/" className={styles.menulist}><span >Roomtype</span></Link>
                     <Link href="/" className={styles.menulist}><span>Announcment</span></Link>

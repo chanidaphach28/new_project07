@@ -1,0 +1,21 @@
+.body{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    background-color:#E8E8E8;
+  }
+  
+  .container{
+    display: grid;
+    place-items: center;
+    width: 93%;
+    background-color: white;
+    margin-top: 150px;
+  }
+  .container a{
+    text-decoration: none;
+  }
+
+  .font1{
+    font-size: 50px;
+  }

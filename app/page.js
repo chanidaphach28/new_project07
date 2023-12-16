@@ -8,9 +8,31 @@ export default function Home() {
   return (
    <div className={styles.body}>
     <Navbar/>
+
     <div className={styles.container}>
-      <h1>homepage</h1>
+      <div className={styles.homeimg}>
+        <Image src="/condo_homepage.jpg" width={1180} height={300} alt="img"/>
+      </div>
+
+
+      <div className={styles.map}>
+        Map
+      </div>
+
+      <div className={styles.roomcomponents}>
+        Room conponents
+      </div>
+
+      <div>
+        room recomment
+      </div>
+
+
+
+
+
     </div>
+
     <Space/>
     <Footer/>
    </div>
