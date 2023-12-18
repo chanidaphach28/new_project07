@@ -12,8 +12,8 @@ export default function Footer(){
                 <div className={styles.blog1}>
 
                     <div  className={styles.logo}>
-                        <Image src="/logo_house.png" alt="logo" height={80} width={80}></Image>
-                        <h1 className={styles.logotext}>PorHub</h1>
+                        <Image src="/HongHub.png" alt="logo" height={70} width={70}></Image>
+                        <h1 className={styles.logotext}>HongHub</h1>
                     </div>
 
                     <div className={styles.copyright}>
@@ -26,7 +26,6 @@ export default function Footer(){
                         1 Chalong Krung 1 Alley, Lat Krabang, Khet Lat<br/>
                         Krabang, Krung Thep Maha Nakhon 10520</p>
                     </div>
-
                 </div>
 
                 <div className={styles.blog}>

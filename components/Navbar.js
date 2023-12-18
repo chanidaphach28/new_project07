@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./Styles/navbar.module.css";
+import styles from "./styles/navbar.module.css";
 import Image from "next/image";
 
 export default function Navbar(){
@@ -24,12 +24,12 @@ export default function Navbar(){
                             <div className={styles.mainbar_search2}>
                                 <Image className="search_img" src="/search.png" 
                                 width={35} height={35} alt='logo'></Image>
-                                <input type="search" className={styles.search} name =""
+                                <input type="search" className={styles.search} 
                                 placeholder="  i'm searching for..." id=""></input>
                             </div>
                         </span>
 
-                        <span className={styles.helptab}>help?</span>
+                        <span className={styles.helptab}><Link href="#">help?</Link></span>
 
                         <span className={styles.sign}>
                             <div></div>
@@ -37,25 +37,22 @@ export default function Navbar(){
                                  <Link href="/pages/signin">Sign in</Link>
                             </div>
                             <div>
-                                <Link href="/">Sign up</Link>
+                                <Link href="/pages/signup">Sign up</Link>
                             </div>
                             <div></div>
                         </span>
-
-
-
                 </div>
 
 
                 <div className={styles.menubar}>
-                        <div class={styles.dropdown}>
+                        <div className={styles.dropdown}>
                                 <Image
                                 src="/dropdown.png" 
                                 alt="dropdown"
                                 width={45}
                                 height={45}/>
                  
-                            <div class={styles.dropdown_menu}>
+                            <div className={styles.dropdown_menu}>
                                 <a href="#">PROMOTION</a>
                                 <a href="#">LOCATION</a>
                                 <a href="#">PRICE RANG</a>
@@ -68,7 +65,7 @@ export default function Navbar(){
                     <Link href="/" className={styles.menulist}><span>Service</span></Link>
                     <Link href="/" className={styles.menulist}><span>Promotion</span></Link>
                     <Link href="/" className={styles.menulist}><span>About Us</span></Link>
-                       
+                    
                 </div>
 
         </nav>

@@ -7,7 +7,7 @@
     width: 100%;
     grid-template-rows: 100px 50px;
     background-color: white;
-    
+    z-index: 20;
 }
 .navbar a{
     text-decoration: none;
@@ -17,14 +17,14 @@
 .topbar{
     border-bottom: 3px solid black;
     display: grid;
-    grid-template-columns:7% 13% 10% 30% 20% 20%;
+    grid-template-columns:7% 13% 10% 30% 25% 15%;
     box-shadow: 0px 1px 4px gray;
     text-decoration: none;
 }
 .sign{
-    border-left: 1px solid black;
+    border-left: 3px solid black;
     display: grid;
-    padding :10px 0px 10px 120px;
+    padding :10px 0px 10px 60px;
     grid-template-rows: 10px 25px 25px 10px;
     font-size: 23px;
     font-weight: 400px;
@@ -71,7 +71,10 @@
     font-size: 18px;
     font-weight: 300px;
     text-decoration: none;
-    padding: 30px 0px 0px 200px;
+    padding: 40px 0px 0px 240px;
+}
+.helptab a:hover{
+    color:blue;
 }
 
 
@@ -94,9 +97,11 @@
 }
 
 .dropdown_menu {
+    font-size: 22px;
     display: none;
     position: absolute;
     background-color: white;
+    z-index: 20
 }
 
 .dropdown_menu a {
@@ -106,7 +111,7 @@
     text-decoration: none;
     display: block;
     text-align: left;
-    z-index: 11;
+    z-index: 20;
 }
 .dropdown{
     background-color: white;
