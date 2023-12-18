@@ -3,10 +3,13 @@ import styles from './page.module.css';
 import Navbar from '@/components/Navbar';
 import Map from "@/components/Map"
 import Link from 'next/link';
+import * as Minio from 'minio'
+
+
 export default function Home() {
+
   return (
    <div className={styles.body}>
-  
   <Navbar/>
     <div className={styles.container}>
       <div className={styles.homeimg}>
@@ -70,10 +73,12 @@ export default function Home() {
 
       <div className={styles.roomcomponents}>
         Room conponents
+        <Link href="/pages/test"> <h1>WEBTEST</h1></Link>
       </div>
 
       <div>
         room recomment
+      
       </div>
     </div>
    </div>
