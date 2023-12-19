@@ -9,7 +9,7 @@ export default function SigIn() {
       <Navbar />
       <div className={styles.container}>
         <form className={styles.signin_form}>
-          <div className={styles.titlebox}>Sign In</div>cdd
+          <div className={styles.titlebox}>Sign In</div>
 
           <input
             className={styles.input_box}

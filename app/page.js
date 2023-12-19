@@ -3,11 +3,26 @@ import styles from './page.module.css';
 import Navbar from '@/components/Navbar';
 import Map from "@/components/Map"
 import Link from 'next/link';
-import * as Minio from 'minio'
 
+const getDors = async () => {
+  try {
+    const res = await fetch("http://localhost:3000/api/dormitory", {
+      cache: "no-store",
+    });
 
-export default function Home() {
-
+    if (!res.ok) {
+      throw new Error("Failed to fetch topics");
+    }
+    else{
+      console.log("Information complete")
+    }
+    return res.json();
+  } catch (error) {
+    console.log("Error loading topics: ", error);
+  }
+};
+export default async function Home() {
+  const { dormitory } = await getDors();
   return (
    <div className={styles.body}>
   <Navbar/>
@@ -61,25 +76,63 @@ export default function Home() {
               <div className={styles.room_btn}>
                 <Link href="/">Top Range</Link>
               </div>
-            
-            
               <div className={styles.room_btn}>
                 <Link href="/">Suggest</Link>
               </div>
-              
               <div></div>
       </div>
-
-
+      
       <div className={styles.roomcomponents}>
-        Room conponents
-        <Link href="/pages/test"> <h1>WEBTEST</h1></Link>
+        <h1>Room components</h1>
+      
+        {dormitory.map((d) => (
+            <div key={d._id}>
+                <div className={styles.roomBox}>
+              
+                  <div className={styles.imgBox}>
+                    <img src={d.img} width={400} height={300} alt='img'></img>
+                  </div>
+                  <div className={styles.textBox}>
+
+                      <div className={styles.textBox1}>
+                        <div className={styles.dormNameBox}>
+                          {d.dorm_name}
+                        </div>
+                        <div className={styles.locationBox}>
+                          , {d.location}
+                        </div>
+                      </div> 
+
+                      <div className={styles.priceBox}>
+                        <div className={styles.price}>
+                          {d.price}
+                        </div>
+                        <div className={styles.month}>
+                          /month
+                        </div>
+                      </div> 
+
+                      <div className={styles.detailBox}>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{d.detail}
+                      </div> 
+
+                      <div className={styles.typeBox}>
+                        Roomtype:    {d.type}
+                      </div> 
+
+                  </div>
+                  
+                </div>
+            </div>
+        ))}
       </div>
 
       <div>
         room recomment
-      
       </div>
+      <Link href="/pages/test"> <h1>WEB TEST</h1></Link>
+        <hr/> 
+        <Link href="/pages/test2"> <h1>POST TEST</h1></Link>
     </div>
    </div>
   )

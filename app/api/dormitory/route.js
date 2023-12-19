@@ -1,16 +1,16 @@
 import connectMongoDB from "@/libs/mongodb";
-import User from "@/models/user";
+import Dors from  "@/models/dormitory";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
-    const { username, password ,email ,phone,name,state} = await request.json();
+    const { type,dorm_name,location,img,price,detail} = await request.json();
     await connectMongoDB();
-    await User.create({ username,password,email,phone,name,state});
+    await Dors.create({type,dorm_name,location,img,price,detail});
     return NextResponse.json({message : "Register Success"},{status:201});
 };
 
 export async function GET() {
 await connectMongoDB();
-const users=  await User.find();
-return NextResponse.json({users})
+const dormitory =  await Dors.find();
+return NextResponse.json({dormitory})
 };

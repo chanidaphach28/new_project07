@@ -1,12 +1,13 @@
 import mongoose , {Schema}  from "mongoose";
 
+
 const dormitorySchema = new Schema(
     {
-        roomtype: String,
-        dor_name: String,
-        dor_img:String,
-        location: String,
-        price:Integer ,
+        type:String,
+        dorm_name:String,
+        location:String,
+        img:String,
+        price:String,
         detail:String
     },
     {timestamps:true,}
