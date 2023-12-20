@@ -137,7 +137,7 @@ height: 300px;
   width: 600px;
   height: 300px;
   display: grid;
-  grid-template-rows:60px 60px 140px 40px;
+  grid-template-rows:70px 60px 140px 30px;
   padding-left: 20px;
 }
 
