@@ -7,59 +7,56 @@ import Image from "next/image";
 export default function RoomType(){
     return(
         <div className={style.body}>
+            <Navbar/>
             <div className={style.container}>
-                <Navbar/>
-
-                
                 <div className={style.RoomType}>  
                     Comfort Room
                 </div>
 
 
-                <div className={style.ButtonRoomType}>
-                    <Link href="#" >SeeAll </Link>
-                </div>
+               <span className={style.Buttonout}>
+                        <div className={style.ButtonRoomType} >
+                            <Link href="#" >SeeAll </Link>
+                        </div>
+               </span>
 
 
                 <div className={style.boxgrid}>
                         <div>
                            <div className={style.Imageroom}>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
+                                <Link href="/"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={300} height ={200}/></Link>    
+                                <div className={style.textsell}>
                                     Comfort Room
                                     Ladkrabang  3500B
                                 </div>
                            </div>
+                          
                            
                         
                         </div>
 
                         <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
+                           <div className={style.Imageroom}>
+                                <Link href="/"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={300} height ={200}/></Link>
+                                <div className={style.textsell}>
                                     Luxe Room
                                     Ladkrabang  5500B
-                                </div>
+                                </div>   
                            </div>
+                        
                            
                         
                         </div>
 
                         <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
+                           <div className={style.Imageroom}>
+                                <Link href="/"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={300} height ={200}/></Link>    
+                                <div className={style.textsell}>
                                     Standard Room
-                                    Ladkrabang  4500B
+                                    Ladkrabang  4500B    
                                 </div>
                            </div>
+                           
                            
                         
                         </div>
@@ -72,50 +69,49 @@ export default function RoomType(){
                 </div>
 
 
-                <div className={style.ButtonRoomType}>
-                    <Link href="#" >SeeAll </Link>
-                </div>
+                <span className={style.Buttonout}>
+                        <div className={style.ButtonRoomType} >
+                            <Link href="#" >SeeAll </Link>
+                        </div>
+               </span>
 
                 
                 <div className={style.boxgrid}>
                         <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
+                           <div className={style.Imageroom}>
+                                <Link href="/"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={300} height ={200}/></Link>
+                                <div className={style.textsell}>
                                     Comfort Room
                                     Ladkrabang  3500B
-                                </div>
+                                </div>   
                            </div>
+                           
                            
                         
                         </div>
 
                         <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
+                           <div className={style.Imageroom}>
+                                <Link href="/"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={300} height ={200}/></Link> 
+                                <div className={style.textsell}>
                                     Luxe Room
                                     Ladkrabang  5500B
-                                </div>
+                                </div>   
                            </div>
+                           
                            
                         
                         </div>
 
                         <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
+                           <div className={style.Imageroom}>
+                               <Link href="/"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={300} height ={200}/></Link>
+                                <div className={style.textsell}>
                                     Standard Room
                                     Ladkrabang  4500B
-                                </div>
+                                </div>   
                            </div>
+                           
                            
                         
                         </div>
@@ -128,50 +124,49 @@ export default function RoomType(){
                 </div>
 
 
-                <div className={style.ButtonRoomType}>
-                    <Link href="#" >SeeAll </Link>
-                </div>
+                <span className={style.Buttonout}>
+                        <div className={style.ButtonRoomType} >
+                            <Link href="#" >SeeAll </Link>
+                        </div>
+               </span>
 
                 
                 <div className={style.boxgrid}>
                         <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
+                           <div className={style.Imageroom}>
+                                <Link href="/"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={300} height ={200}/></Link>  
+                                <div className={style.textsell}>
                                     Comfort Room
                                     Ladkrabang  350B
-                                </div>
+                                </div>  
                            </div>
+                           
                            
                         
                         </div>
 
                         <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
+                           <div className={style.Imageroom}>
+                                <Link href="/"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={300} height ={200}/></Link>
+                                <div className={style.textsell}>
                                     Luxe Room
                                     Ladkrabang  600B
-                                </div>
+                                </div>  
                            </div>
+                           
                            
                         
                         </div>
 
                         <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
+                           <div className={style.Imageroom}>
+                                <Link href="/"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={300} height ={200}/></Link>
+                                <div className={style.textsell}>
                                     Standard Room
                                     Ladkrabang  400B
-                                </div>
+                                </div>    
                            </div>
+                          
                            
                         
                         </div>
@@ -179,115 +174,6 @@ export default function RoomType(){
 
 
 
-                <div className={style.RoomType}> 
-                    ห้องสวีท
-                </div>
-
-
-                <div className={style.ButtonRoomType}>
-                    <Link href="#" >SeeAll </Link>
-                </div>
-
-                
-                <div className={style.boxgrid}>
-                        <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
-                                    Comfort Room
-                                    Ladkrabang  3050B
-                                </div>
-                           </div>
-                           
-                        
-                        </div>
-
-                        <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
-                                    Luxe Room
-                                    Ladkrabang  6000B
-                                </div>
-                           </div>
-                           
-                        
-                        </div>
-
-                        <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
-                                    Standard Room
-                                    Ladkrabang  4000B
-                                </div>
-                           </div>
-                           
-                        
-                        </div>
-                </div>
-
-
-
-                <div className={style.RoomType}> 
-                    Party Room
-                </div>
-
-
-                <div className={style.ButtonRoomType}>
-                    <Link href="#" >SeeAll </Link>
-                </div>
-
-                
-                <div className={style.boxgrid}>
-                        <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
-                                    Comfort Room
-                                    Ladkrabang  11,000B
-                                </div>
-                           </div>
-                           
-                        
-                        </div>
-
-                        <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
-                                    Luxe Room
-                                    Ladkrabang  16,000B
-                                </div>
-                           </div>
-                           
-                        
-                        </div>
-
-                        <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
-                                    Standard Room
-                                    Ladkrabang  10,000B
-                                </div>
-                           </div>
-                           
-                        
-                        </div>
-                </div>
 
 
 
@@ -296,50 +182,49 @@ export default function RoomType(){
                 </div>
 
 
-                <div className={style.ButtonRoomType}>
-                    <Link href="#" >SeeAll </Link>
-                </div>
+                <span className={style.Buttonout}>
+                        <div className={style.ButtonRoomType} >
+                            <Link href="#" >SeeAll </Link>
+                        </div>
+                </span>
 
 
                 <div className={style.boxgrid}>
                         <div>
                            <div className={style.Imageroom}>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
+                                <Link href="/"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={300} height ={200}/></Link> 
+                                <div className={style.textsell}>
                                     Comfort Room
                                     Ladkrabang  3500B
-                                </div>
+                                </div>   
                            </div>
+                           
                            
                         
                         </div>
 
                         <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
+                           <div className={style.Imageroom}>
+                                <Link href="/"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={300} height ={200}/></Link> 
+                                <div className={style.textsell}>
                                     Luxe Room
                                     Ladkrabang  5500B
-                                </div>
+                                </div>   
                            </div>
+                           
                            
                         
                         </div>
 
                         <div>
-                           <div>
-                                <Link href="#"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={311} height ={200} /></Link>    
-                           </div>
-                           <div className={style.textsell}>
-                                <div >
+                           <div className={style.Imageroom}>
+                                <Link href="/"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={300} height ={200}/></Link>
+                                <div className={style.textsell}>
                                     Standard Room
                                     Ladkrabang  4500B
-                                </div>
+                                </div>   
                            </div>
+                           
                            
                         
                         </div>
@@ -355,9 +240,9 @@ export default function RoomType(){
 
                 <div className={style.boxgridshow}>
                     <div>
-                        <div>
-                           <div className={style.ImageRecommendRoom }>
-                              <Link href="/"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={500} height ={400}/></Link>
+                        <div className={style.ImageRecommendRoom }>
+                           <div className={style.Imageroom} >
+                             <Link href="/"><img src="https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width ={500} height ={400}/></Link>
                            </div>
                         </div>
 
@@ -372,7 +257,7 @@ export default function RoomType(){
                         </div>
                         <div className={style.textAmenities}>
                             <div>
-                                <img src = "https://i.pinimg.com/564x/ad/0d/29/ad0d2998cef2f86a14b19283ac549565.jpg" width={20} height ={20}  />
+                                <Image src = "/door.svg" width={20} height ={20}  />
                                 Room Amenities
                             </div>
                             
@@ -420,6 +305,11 @@ export default function RoomType(){
                 <div>
                     
                 </div>
+
+
+
+
+                
 
 
 

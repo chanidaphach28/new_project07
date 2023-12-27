@@ -28,7 +28,7 @@ export default async function Home() {
   <Navbar/>
     <div className={styles.container}>
       <div className={styles.homeimg}>
-        <Image src="/condo_homepage.jpg" width={1239} height={350} alt="img"/>
+        <Image src="/Homepage.jpg" width={1379} height={650} alt="img"/>
       </div>
 
 

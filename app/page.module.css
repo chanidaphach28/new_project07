@@ -17,6 +17,7 @@ margin-top: 140px;
   font-size: 50px;
   width: 1240px;
   height: 350px;
+  
   }
 .map{
   margin: 0 0 20px 0;
@@ -27,16 +28,19 @@ margin-top: 140px;
   width:1240;
   height: 420px;
   background-image: url(https://img.freepik.com/free-photo/white-wall-texture-background_24972-2224.jpg?w=740&t=st=1702744123~exp=1702744723~hmac=9d52f17a58211bf640c8f0072e6e08a033756ed23d115c3d47c5530927f574eb);
+
 }
 
 .map a{
   text-decoration: none;
   color: black;
+  
 }
 .mapfunction{
   width: 100%;
   display: grid;
   grid-template-columns: 5% 25% 10% 30% 15% 10% 5%;
+  
 }
 .mapfunction1{
   background-color: white;
@@ -45,6 +49,7 @@ margin-top: 140px;
   font-size: 20px;
   margin: 8px 0 0px 0px;
   padding : 14px 0 0 15px;
+  
 }
 .mapfunction1:hover{
   background-color: #282828;
@@ -81,6 +86,7 @@ margin-top: 140px;
   width: 80px;
   margin: 8px 0 0 0px;
   box-shadow: 0 5px 10px gray;
+  border-radius: 0.8rem;
 }
 .mapfunction3:hover{
   background-color: #282828;
